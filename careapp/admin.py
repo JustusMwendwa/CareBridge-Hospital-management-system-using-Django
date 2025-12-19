@@ -8,3 +8,6 @@ admin.site.register(MedicalRecords)
 admin.site.register(Appointments)
 
 
+
+
+

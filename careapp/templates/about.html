@@ -1,0 +1,58 @@
+{% extends 'starter-page.html' %}
+
+{% load static %}
+
+{%block title %} about us  {% endblock %}
+
+{% block content %}
+
+<!-- About Section -->
+    <section id="about" class="about section">
+
+      <div class="container">
+
+        <div class="row gy-4 gx-5">
+
+          <div class="col-lg-6 position-relative align-self-start" data-aos="fade-up" data-aos-delay="200">
+            <img src="{% static 'assets/img/about.jpg'%}" class="img-fluid" alt="">
+            <a href="https://www.youtube.com/watch?v=Y7f98aduVJ8" class="glightbox pulsating-play-btn"></a>
+          </div>
+
+          <div class="col-lg-6 content" data-aos="fade-up" data-aos-delay="100">
+            <h3>About Us</h3>
+            <p>
+              CareBridge is committed to connecting individuals, families, and communities with dependable and compassionate care solutions.
+              We bridge the gap between skilled caregivers and those in need of support, ensuring quality, trust, and dignity in every service we provide.
+            </p>
+            <ul>
+              <li>
+                <i class="fa-solid fa-vial-circle-check"></i>
+                <div>
+                  <h5>Enhancing Access to Quality Care</h5>
+                  <p>We provide timely, reliable, and professional care services designed to meet the unique needs of every client.</p>
+                </div>
+              </li>
+              <li>
+                <i class="fa-solid fa-pump-medical"></i>
+                <div>
+                  <h5>Comprehensive Support Services</h5>
+                  <p>CareBridge offers a wide range of personalized support—from daily living assistance to specialized care tailored for individuals and families.</p>
+                </div>
+              </li>
+              <li>
+                <i class="fa-solid fa-heart-circle-xmark"></i>
+                <div>
+                  <h5>Commitment to Safety & Well-being</h5>
+                  <p>We uphold strict care standards, ensuring safety, comfort, and dignity while promoting a healthy and independent lifestyle.</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /About Section -->
+
+{% endblock %}

@@ -1,0 +1,109 @@
+{% extends 'starter-page.html'%}
+
+{% load static %}
+
+{% block title %} Departments page {% endblock %}
+
+{% block content %}
+
+<!-- Departments Section -->
+    <section id="departments" class="departments section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Departments</h2>
+        <p>CareBridge offers specialized departments dedicated to delivering compassionate, professional, and reliable care services.</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row">
+          <div class="col-lg-3">
+            <ul class="nav nav-tabs flex-column">
+              <li class="nav-item">
+                <a class="nav-link active show" data-bs-toggle="tab" href="#departments-tab-1">Home Care Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#departments-tab-2">Elderly Support</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#departments-tab-3">Disability Care</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#departments-tab-4">Child & Family Support</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#departments-tab-5">Health Monitoring</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-9 mt-4 mt-lg-0">
+            <div class="tab-content">
+              <div class="tab-pane active show" id="departments-tab-1">
+                <div class="row">
+                  <div class="col-lg-8 details order-2 order-lg-1">
+                    <h3>Home Care Services</h3>
+                    <p class="fst-italic">Providing warm, professional, and reliable support to clients who require assistance in the comfort of their homes.</p>
+                    <p>CareBridge offers personalized home care solutions including hygiene assistance, mobility support, meal preparation, and daily living activities. Our goal is to help clients maintain independence, safety, and comfort in familiar surroundings.</p>
+                  </div>
+                  <div class="col-lg-4 text-center order-1 order-lg-2">
+                    <img src="{% static 'assets/img/departments-1.jpg'%}" alt="" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane" id="departments-tab-2">
+                <div class="row">
+                  <div class="col-lg-8 details order-2 order-lg-1">
+                    <h3>Elderly Support</h3>
+                    <p class="fst-italic">Compassionate and specialized care aimed at supporting seniors’ health, emotional well-being, and independence.</p>
+                    <p>Our Elderly Support Department provides companionship, daily assistance, medication reminders, and mobility help. CareBridge ensures seniors receive dignified care that enhances their quality of life and safety.</p>
+                  </div>
+                  <div class="col-lg-4 text-center order-1 order-lg-2">
+                    <img src="{% static 'assets/img/departments-2.jpg'%}" alt="" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane" id="departments-tab-3">
+                <div class="row">
+                  <div class="col-lg-8 details order-2 order-lg-1">
+                    <h3>Disability Care</h3>
+                    <p class="fst-italic">Tailored support for individuals living with physical or developmental disabilities.</p>
+                    <p>CareBridge provides structured assistance that includes personal care, therapy support, daily living activities, and skill-building. Our aim is to empower individuals with disabilities to thrive and participate actively in daily life.</p>
+                  </div>
+                  <div class="col-lg-4 text-center order-1 order-lg-2">
+                    <img src="{% static 'assets/img/departments-3.jpg'%}" alt="" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane" id="departments-tab-4">
+                <div class="row">
+                  <div class="col-lg-8 details order-2 order-lg-1">
+                    <h3>Child & Family Support</h3>
+                    <p class="fst-italic">Reliable care solutions that support children, parents, and households with daily routines and special needs.</p>
+                    <p>Our services include childcare assistance, special needs support, family-focused care planning, and emotional development guidance. We help families achieve balance and stability with trusted, caring support.</p>
+                  </div>
+                  <div class="col-lg-4 text-center order-1 order-lg-2">
+                    <img src="{% static 'assets/img/departments-4.jpg'%}" alt="" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane" id="departments-tab-5">
+                <div class="row">
+                  <div class="col-lg-8 details order-2 order-lg-1">
+                    <h3>Health Monitoring</h3>
+                    <p class="fst-italic">Continuous care and health tracking to ensure client safety and medical stability.</p>
+                    <p>CareBridge conducts regular check-ins, vital-sign monitoring, wellness reports, and follow-ups. Our trained caregivers ensure timely support for clients managing chronic conditions or recovering from medical procedures.</p>
+                  </div>
+                  <div class="col-lg-4 text-center order-1 order-lg-2">
+                    <img src="{% static 'assets/img/departments-5.jpg'%}" alt="" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /Departments Section -->
+{% endblock %}

@@ -1,0 +1,52 @@
+{% extends 'starter-page.html' %}
+{% load static %}
+
+{% block title %}Booked appointments {% endblock %}
+
+{% block content %}
+
+{% for message in messages %}
+
+    <p class="alert alert-success">{{ message }}</p>
+{% endfor %}
+
+<h1 class="text-center">list of booked appointments</h1>
+<p><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aut beatae cumque doloribus est id maxime molestias obcaecati veniam! Et quaerat vitae voluptatibus! Beatae, saepe tempore. Porro quis repellendus vitae.</span><span>Dolorum eius ex ipsum labore obcaecati, quaerat quam quos recusandae tempora voluptates. Ab accusantium alias animi, est eveniet facere iste iure laboriosam molestiae nihil praesentium, quaerat quod, repellat suscipit vero.</span><span>Amet inventore labore magni sunt vero voluptatibus. Accusantium atque cum deserunt ducimus enim, fuga harum itaque omnis, praesentium quia quidem tempora velit. Earum ipsa ipsam itaque mollitia obcaecati quisquam sapiente.</span></p>
+
+
+<table class="table table-dark">
+ <tr>
+     <th>Name</th>
+     <th>Email</th>
+     <th>Phone Number</th>
+     <th>Date and Time</th>
+     <th>Departments</th>
+     <th>Doctor</th>
+     <th>Messages</th>
+     <th>Action</th>
+ </tr>
+
+     {% for Appointments in all %}
+    <tr>
+
+        <td>{{Appointments.name}}</td>
+        <td>{{Appointments.email}}</td>
+        <td>{{Appointments.phone}}</td>
+        <td>{{Appointments.datetime}}</td>
+        <td>{{Appointments.department}}</td>
+        <td>{{Appointments.doctor}}</td>
+        <td>{{Appointments.message}}</td>
+        <td>
+
+            <a href="/edit/{{ Appointments.id }}" class="btn btn-outline-warning">Edit</a>
+
+            <a href="/delete/{{ Appointments.id }}" class="btn btn-outline-danger">Delete</a>
+            <a href="" class="btn btn-outline-success">Pay</a>
+        </td>
+    </tr>
+
+
+     {% endfor %}
+</table>
+
+{% endblock %}
